@@ -1,0 +1,15 @@
+{
+    "id": "e37cedbf-e681-4f5f-9871-d101d69783e4",
+    "version": "0.0.1",
+    "requiredApiVersion": "^1.44.0",
+    "iconFile": "icon.png",
+    "author": {
+        "name": "Samir Gupta",
+        "homepage": "samir.gupta987@gmail.com",
+        "support": "samir.gupta987@gmail.com"
+    },
+    "name": "Stock.Market.Bot",
+    "nameSlug": "stockmarketbot",
+    "classFile": "StockMarketBotApp.ts",
+    "description": "This app helps to take financial decisions based on real time data"
+}
