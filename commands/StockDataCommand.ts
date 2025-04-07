@@ -29,7 +29,7 @@ export class StockDataCommand implements ISlashCommand {
 
 		const symbol = args[0].toUpperCase();
 		// Use your Finnhub API key (ideally, retrieve this from environment settings)
-		const apiKey = 'cvgrippr01qi76d4rhl0cvgrippr01qi76d4rhlg'; 
+		const apiKey = ''; 
 		const finnHubUrl = `https://finnhub.io/api/v1/quote?symbol=${symbol}&token=${apiKey}`;
 
 		try {
