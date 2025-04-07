@@ -51,9 +51,10 @@ export class StockDataCommand implements ISlashCommand {
 
 			const responseText = `
 			**${symbol} Market Data:**\n
-			- Current Price: ${currentPrice}\n
-			- High: ${high}\n- Low: ${low}\n
-			- Open: ${open}\n
+			- Current Price: ${currentPrice}
+			- High: ${high}
+			- Low: ${low}
+			- Open: ${open}
 			- Previous Close: ${previousClose}`;
 			await this.sendMessage(context, modify, responseText);
 		} catch (error) {

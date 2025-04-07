@@ -11,5 +11,6 @@
     "name": "Stock.Market.Bot",
     "nameSlug": "stockmarketbot",
     "classFile": "StockMarketBotApp.ts",
-    "description": "This app helps to take financial decisions based on real time data"
+    "description": "This app helps to take financial decisions based on real time data",
+    "implements": []
 }
