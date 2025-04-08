@@ -7,6 +7,7 @@ import { IAppInfo } from '@rocket.chat/apps-engine/definition/metadata';
 import { IConfigurationExtend } from '@rocket.chat/apps-engine/definition/accessors';
 import { settings } from './settings/settings';
 import { StockDataCommand } from './commands/StockDataCommand';
+import { WatchlistCommand } from './commands/WatchListCommand';
 
 export class StockMarketBotApp extends App {
     constructor(info: IAppInfo, logger: ILogger, accessors: IAppAccessors) {
@@ -18,6 +19,7 @@ export class StockMarketBotApp extends App {
                 configuration.settings.provideSetting(settings)
             ),
             configuration.slashCommands.provideSlashCommand(new StockDataCommand()),
+            configuration.slashCommands.provideSlashCommand(new WatchlistCommand()),
         ]);
     }
 }
