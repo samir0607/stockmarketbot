@@ -1,5 +1,5 @@
 const FINNHUB_API_KEY = '';
-const symbol = 'AAPL'; // Example asset symbol
+const symbol = 'AAPL';
 
 const wsUrl = `wss://ws.finnhub.io?token=${FINNHUB_API_KEY}`;
 

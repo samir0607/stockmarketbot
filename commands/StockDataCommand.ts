@@ -20,7 +20,6 @@ export class StockDataCommand implements ISlashCommand {
 		modify: IModify,
 		http: IHttp
 	): Promise<void> {
-		// Extract arguments from the slash command.
 		const args = context.getArguments();
 		if (!args || args.length === 0) {
 			await this.sendMessage(context, modify, "Usage: /asset-data [STOCK_SYMBOL]");
@@ -29,11 +28,10 @@ export class StockDataCommand implements ISlashCommand {
 
 		const symbol = args[0].toUpperCase();
 		// Use your Finnhub API key (ideally, retrieve this from environment settings)
-		const apiKey = ''; 
+		const apiKey = 'cvgrippr01qi76d4rhl0cvgrippr01qi76d4rhlg'; 
 		const finnHubUrl = `https://finnhub.io/api/v1/quote?symbol=${symbol}&token=${apiKey}`;
 
 		try {
-			// Make the REST API call.
 			const res = await http.get(finnHubUrl);
 			const quoteResponse = JSON.parse(res.content || '{}');
 
